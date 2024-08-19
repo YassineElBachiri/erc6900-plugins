@@ -72,5 +72,5 @@ interface IPlugin {
     /// @notice Describe the metadata of the plugin.
     /// @dev This metadata MUST stay constant over time.
     /// @return A metadata struct describing the plugin.
-    // function pluginMetadata() external pure returns (PluginMetadata memory);  // TODO PluginMetaData
+    // function pluginMetadata() external pure returns (PluginMetadata memory);  // TODO PluginMetaData impo
 }
