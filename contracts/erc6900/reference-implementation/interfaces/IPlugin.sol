@@ -67,7 +67,7 @@ interface IPlugin {
     /// @notice Describe the contents and intended configuration of the plugin.
     /// @dev This manifest MUST stay constant over time.
     /// @return A manifest describing the contents and intended configuration of the plugin.
-    // function pluginManifest() external pure returns (PluginManifest memory);   //TODO PluginManifest
+    // function pluginManifest() external pure returns (PluginManifest memory);   //TODO PluginManifest impo
 
     /// @notice Describe the metadata of the plugin.
     /// @dev This metadata MUST stay constant over time.
