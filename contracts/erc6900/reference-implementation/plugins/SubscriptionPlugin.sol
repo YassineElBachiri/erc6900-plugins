@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT-Lisence
 pragma solidity ^0.8.24;
 
-import {BasePlugin} from "./erc6900/reference-implementation/plugins/BasePlugin.sol";
-import {IPluginExecutor} from "./erc6900/reference-implementation/interfaces/IPluginExecutor.sol";
+import {BasePlugin} from "./BasePlugin.sol";
+import {IPluginExecutor} from "../interfaces/IPluginExecutor.sol";
 import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "./erc6900/reference-implementation/interfaces/IPlugin.sol";
 
 /// @title Subscription Plugin
