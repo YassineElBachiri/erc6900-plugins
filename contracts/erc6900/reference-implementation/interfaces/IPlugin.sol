@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT-Lisence
 pragma solidity ^0.8.24;
 
-
 interface IPlugin {
     /// @notice Initialize plugin data for the modular account.
     /// @dev Called by the modular account during `installPlugin`.
@@ -37,7 +36,12 @@ interface IPlugin {
     /// @param sender The caller address.
     /// @param value The call value.
     /// @param data The calldata sent.
-    function preRuntimeValidationHook(uint8 functionId, address sender, uint256 value, bytes calldata data) external;
+    function preRuntimeValidationHook(
+        uint8 functionId,
+        address sender,
+        uint256 value,
+        bytes calldata data
+    ) external;
 
     /// @notice Run the runtime validationFunction specified by the `functionId`.
     /// @dev To indicate the entire call should revert, the function MUST revert.
@@ -46,8 +50,12 @@ interface IPlugin {
     /// @param sender The caller address.
     /// @param value The call value.
     /// @param data The calldata sent.
-    function runtimeValidationFunction(uint8 functionId, address sender, uint256 value, bytes calldata data)
-        external;
+    function runtimeValidationFunction(
+        uint8 functionId,
+        address sender,
+        uint256 value,
+        bytes calldata data
+    ) external;
 
     /// @notice Run the pre execution hook specified by the `functionId`.
     /// @dev To indicate the entire call should revert, the function MUST revert.
@@ -56,13 +64,21 @@ interface IPlugin {
     /// @param value The call value.
     /// @param data The calldata sent.
     /// @return Context to pass to a post execution hook, if present. An empty bytes array MAY be returned.
-    function preExecutionHook(uint8 functionId, address sender, uint256 value, bytes calldata data) external returns (bytes memory);
+    function preExecutionHook(
+        uint8 functionId,
+        address sender,
+        uint256 value,
+        bytes calldata data
+    ) external returns (bytes memory);
 
     /// @notice Run the post execution hook specified by the `functionId`.
     /// @dev To indicate the entire call should revert, the function MUST revert.
     /// @param functionId An identifier that routes the call to different internal implementations, should there be more than one.
     /// @param preExecHookData The context returned by its associated pre execution hook.
-    function postExecutionHook(uint8 functionId, bytes calldata preExecHookData) external;
+    function postExecutionHook(
+        uint8 functionId,
+        bytes calldata preExecHookData
+    ) external;
 
     /// @notice Describe the contents and intended configuration of the plugin.
     /// @dev This manifest MUST stay constant over time.
