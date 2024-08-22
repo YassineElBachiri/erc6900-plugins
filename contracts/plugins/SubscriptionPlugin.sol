@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT-Lisence
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.19;
 
 import {BasePlugin} from "./BasePlugin.sol";
 import {IPluginExecutor} from "../interfaces/IPluginExecutor.sol";
