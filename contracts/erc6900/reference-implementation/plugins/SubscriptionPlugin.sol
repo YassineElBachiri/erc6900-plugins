@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {BasePlugin} from "./BasePlugin.sol";
 import {IPluginExecutor} from "../interfaces/IPluginExecutor.sol";
-import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "./erc6900/reference-implementation/interfaces/IPlugin.sol";
+// import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "./erc6900/reference-implementation/interfaces/IPlugin.sol";
 
 /// @title Subscription Plugin
 /// @author Yassine EL Bachiri
@@ -28,8 +28,8 @@ contract SubscriptionPlugin {
 
     struct SubscriptionData {
         uint256 amount; // <- native currency
-        uint256 lastPaid;
-        bool enabled;
+        uint256 lastPaid; // <- last Paid
+        bool enabled; // true Or False
     }
 
     // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
