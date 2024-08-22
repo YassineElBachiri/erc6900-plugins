@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import {BasePlugin} from "./BasePlugin.sol";
 import {IPluginExecutor} from "../interfaces/IPluginExecutor.sol";
-// import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "./erc6900/reference-implementation/interfaces/IPlugin.sol";
+import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "../interfaces/IPlugin.sol";
 
 /// @title Subscription Plugin
 /// @author Yassine EL Bachiri

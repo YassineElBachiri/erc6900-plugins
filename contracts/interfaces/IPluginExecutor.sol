@@ -1,10 +1,11 @@
-// SPDX-License-Identifier: MIT-Lisence
-pragma solidity ^0.8.24;
+// SPDX-License-Identifier: CC0-1.0
+pragma solidity ^0.8.19;
 
 interface IPluginExecutor {
-    /// @notice Execute a call from a plugin through the account.
-    /// @dev Permissions must be granted to the calling plugin for the call to go through.
-    /// @param data The calldata to send to the account.
+    /// @notice Execute a call from a plugin to another plugin, via an execution function installed on the account.
+    /// @dev Plugins are not allowed to call native functions on the account. Permissions must be granted to the
+    /// calling plugin for the call to go through.
+    /// @param data The calldata to send to the plugin.
     /// @return The return data from the call.
     function executeFromPlugin(bytes calldata data) external payable returns (bytes memory);
 
