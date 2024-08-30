@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.19;
 
-import {UserOperation} from "@eth-infinitism/account-abstraction/interfaces/UserOperation.sol";
+import {UserOperation} from "https://github.com/eth-infinitism/account-abstraction/interfaces/UserOperation.sol";
 import {ERC165} from "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 
 import {IPlugin, PluginManifest, PluginMetadata} from "../interfaces/IPlugin.sol";
