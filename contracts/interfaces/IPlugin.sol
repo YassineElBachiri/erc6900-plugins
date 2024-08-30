@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: CC0-1.0
 pragma solidity ^0.8.19;
 
-import {UserOperation} from "@eth-infinitism/account-abstraction/interfaces/UserOperation.sol";
+import {UserOperation} from "../lib/account-abstraction/interfaces/UserOperation.sol";
 
 // Forge formatter will displace the first comment for the enum field out of the enum itself,
 // so annotating here to prevent that.

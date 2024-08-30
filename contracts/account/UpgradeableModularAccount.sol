@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.19;
 
-import {BaseAccount} from "@eth-infinitism/account-abstraction/core/BaseAccount.sol";
-import {IEntryPoint} from "@eth-infinitism/account-abstraction/interfaces/IEntryPoint.sol";
-import {UserOperation} from "@eth-infinitism/account-abstraction/interfaces/UserOperation.sol";
+import {BaseAccount} from "../lib/account-abstraction/core/BaseAccount.sol";
+import {IEntryPoint} from "../lib/account-abstraction/interfaces/IEntryPoint.sol";
+import {UserOperation} from "../lib/account-abstraction/interfaces/UserOperation.sol";
 import {UUPSUpgradeable} from "@openzeppelin/contracts/proxy/utils/UUPSUpgradeable.sol";
 import {IERC165} from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 import {EnumerableMap} from "@openzeppelin/contracts/utils/structs/EnumerableMap.sol";
