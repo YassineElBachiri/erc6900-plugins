@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT-Licence
+SPDX-License-Identifier: MIT-Licence
 pragma solidity ^0.8.19;
 
 import {BasePlugin} from "./BasePlugin.sol";
