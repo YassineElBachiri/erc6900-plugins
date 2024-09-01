@@ -6,13 +6,13 @@ import {IPluginExecutor} from "../interfaces/IPluginExecutor.sol";
 import {ManifestFunction, ManifestAssociatedFunctionType, ManifestAssociatedFunction, PluginManifest, PluginMetadata, IPlugin} from "../interfaces/IPlugin.sol";
 
 /// @title Donation Plugin
-/// @author [Your Name]
+/// @author YASSINE EL BACHIRI
 /// @notice This plugin allows users to donate funds to a charity.
 contract DonationPlugin {
     // metadata used by the pluginMetadata() method down below
     string public constant NAME = "Donation Plugin";
     string public constant VERSION = "1.0.0";
-    string public constant AUTHOR = "[Your Name]";
+    string public constant AUTHOR = "YASSINE EL BACHIRI";
 
     // this is a constant used in the manifest, to reference our only dependency: the single owner plugin
     // since it is the first, and only, plugin the index 0 will reference the single owner plugin
